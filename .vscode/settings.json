@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "FLUSHALL",
+        "Sako",
+        "TRAVERSY"
+    ],
+
+    "eslint.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
+}
