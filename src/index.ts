@@ -9,7 +9,6 @@ dotenv.config();
 const redisUrl = "redis://localhost:6379";
 const cacheManager = new RedisCacheManager(redisUrl);
 
-
 const app: express.Application = express();
 const port = 3000;
 
