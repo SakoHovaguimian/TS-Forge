@@ -5,3 +5,6 @@ My TypeScript playground! It's where I get to play around with TypeScript, try o
 - SocketIO
 - Redis
 - Smart .env auto-complete 
+
+## Docs
+[Redis Cheatsheet](./docs/redis.md)
