@@ -3,11 +3,13 @@ import { RedisCacheManager } from "./services/cacheManager";
 import dotenv from 'dotenv';
 import { Routes } from './routes/routes';
 import { SocketService } from './services/socketService';
+import { NotificationManager } from "./services/notificationManager";
 
 dotenv.config();
 
 const redisUrl = "redis://localhost:6379";
 const cacheManager = new RedisCacheManager(redisUrl);
+const notificationManager = new NotificationManager();
 
 const app: express.Application = express();
 const port = 3000;
@@ -28,6 +30,7 @@ const allRoutes = new Routes(
   app,
   cacheManager,
   socketService,
+  notificationManager,
 );
 
 allRoutes.init();
