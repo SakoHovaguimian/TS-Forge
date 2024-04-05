@@ -8,9 +8,12 @@ export function setupSocketRoutes(app: Application, socketService: SocketService
     });
 
     app.post("/chat/join", async (req: Request, res: Response) => {
+
         const { room_id } = req.body;
+
         socketService.io.sockets.emit('join-room', room_id);
         res.send("Joined room");
+
     });
 
 }
