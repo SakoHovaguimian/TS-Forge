@@ -1,3 +1,32 @@
+// Optional Type Test
+
+type Pet = {
+    name: string;
+    breed?: string;
+    tricks: string[]
+};
+
+const pet: Pet = {
+    name: "Sako",
+    breed: "Undiscovered",
+    tricks: ["Sit", "Lay Down", "Roll Over"],
+};
+
+const pet2: Pet = {
+    name: "Sako",
+    breed: "Poodle",
+    tricks: ["Fetch", "Eat"],
+};
+
+// find common tricks between two pets
+const commonTricks = pet.tricks.filter(trick => pet2.tricks.includes(trick));
+if (commonTricks.length > 0) {
+    console.log(`Common Tricks: ${commonTricks}`);
+} else {
+    console.log("No common tricks found");
+
+}
+
 type User = {
     name: string;
     age: number;
