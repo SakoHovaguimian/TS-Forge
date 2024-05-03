@@ -6,7 +6,6 @@
     "express": "^4.19.2",
     "express-useragent": "^1.0.15",
     "ioredis": "^5.3.2",
-    "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "zod": "^3.22.4"
   },
@@ -19,7 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "description": "",
   "devDependencies": {
@@ -30,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
     "eslint-plugin-unused-imports": "^3.1.0",
+    "nodemon": "^3.1.0",
     "socket.io": "^4.7.5"
   }
 }
