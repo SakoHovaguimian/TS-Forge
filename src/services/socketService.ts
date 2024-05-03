@@ -135,6 +135,11 @@ export class SocketService {
 
       socket.leave(room);
 
+      if (!roomUserDictionary[room]) {
+        console.log('No users in room');
+        return;
+      }
+
       roomUserDictionary[room] = roomUserDictionary[room].filter(user => user !== this.currentUser);
 
       const newRoomCount = roomUserDictionary[room].length;
